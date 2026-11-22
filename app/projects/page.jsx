@@ -1,3 +1,4 @@
+
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -31,12 +32,14 @@ export default function Page() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
 	return (
 		<>
 			<main className="overflow-hidden">
 				<FixedButon href="/#projects">
 					<FontAwesomeIcon icon={faChevronLeft} className="text-white pr-10" />
 				</FixedButon>
+
 				<div className="relative h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0 md:absolute top-1/4 md:right-[10%] md:-translate-y-16">
 						<motion.div
@@ -54,6 +57,7 @@ export default function Page() {
 							/>
 						</motion.div>
 					</div>
+
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-purple-950/50 md:bg-transparent md:pt-0">
 						<h1 className="md:bg-purple-950 bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-white text-5xl md:text-8xl font-bold">
 							My Projects
@@ -81,12 +85,14 @@ export default function Page() {
 						</motion.div>
 					</div>
 				</div>
+
 				<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start">
 						<Hr variant="long"></Hr>
 						<h1 className="text-3xl font-bold mt-3 text-white">Hightlight</h1>
 					</div>
 				</div>
+
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5">
 						<div className="images relative w-full aspect-square">
@@ -109,6 +115,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
+
 							<div className="absolute top-10 right-28 h-[30%] aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
@@ -134,6 +141,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
+
 							<div className="absolute bottom-10 md:bottom-26 right-20 h-[35%] aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
@@ -162,6 +170,7 @@ export default function Page() {
 							</div>
 						</div>
 					</div>
+
 					<motion.div
 						className="flex justify-center items-start flex-col mb-5 md:px-10"
 						initial={{
@@ -188,7 +197,8 @@ export default function Page() {
 							interview performance by providing a analysis of the user&apos;s
 							answer, gesture, and material recommendation to improve the user&apos;s
 							interview skills.
-						</p>{" "}
+						</p>
+
 						<div className="mt-3">
 							<Button variation="primary">
 								<Link href="projects/intervyou">More</Link>
@@ -204,6 +214,7 @@ export default function Page() {
 						</div>
 					</motion.div>
 				</div>
+
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start">
 						<Hr variant="long"></Hr>
@@ -243,10 +254,10 @@ export default function Page() {
 					{Object.keys(category).map((key, index) => (
 						<button
 							key={index}
-							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-gray-300 focus:text-black focus:ring focus:ring-slate-500 ${
+							className={`px-3 md:px-5 py-2 rounded-xl cursor-pointer border backdrop-blur-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-400 ${
 								activeCategory === key
-									? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
-									: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
+									? "bg-purple-600/40 text-white border-purple-300 shadow-lg shadow-purple-900/30"
+									: "bg-purple-950/40 text-purple-100 border-purple-500/30 hover:bg-purple-600/30 hover:text-white hover:border-purple-300/70"
 							}`}
 							onClick={() => setActiveCategory(key)}>
 							{category[key]}
