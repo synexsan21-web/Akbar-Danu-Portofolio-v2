@@ -1,9 +1,6 @@
 
-// Copyright (C) 2025 Alvalen Bilyunazra
-// This file is part of Alvalens-porto-2-nextJs.
-// Licensed under the GNU GPL v3.0. See LICENSE for details.
-
 "use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -20,7 +17,11 @@ import Hr from "@/components/Hr";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import {
+	faInstagram,
+	faLinkedin,
+	faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ScrollIndicator() {
@@ -97,10 +98,11 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.4, type: "spring" }}>
-							hi! i&apos;m akbar danu, an adaptable professional with over 2 years
-							of experience in production, sales, customer service, and administration,
-							while also working as a freelance graphic designer with an interest
-							in visual communication and creative development.
+							hi! i&apos;m akbar danu, an adaptable professional with over 2
+							years of experience in production, sales, customer service, and
+							administration, while also working as a freelance graphic
+							designer with an interest in visual communication and creative
+							development.
 						</motion.p>
 
 						<motion.div
@@ -202,7 +204,7 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Akbar Danu Projects"
+								alt="Alvalens Setup"
 								placeholder="blur"
 							/>
 						</motion.div>
@@ -253,7 +255,7 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Akbar Danu Setup"
+								alt="Alvalens Setup"
 								placeholder="blur"
 							/>
 						</motion.div>
@@ -289,7 +291,6 @@ const MyPage = () => {
 							</a>
 						</motion.p>
 
-						{/* icons */}
 						<div className="flex justify-center items-center space-x-4">
 							<motion.a
 								href="mailto:danuhardja2@gmail.com?subject=Hello&body=Hello Akbar,"
