@@ -296,8 +296,8 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.3, type: "spring" }}>
-							<a href="mailto:danuhardja2@gmail.com?subject=Hello&body=Hello%20Akbar">
-								danuhardja2@gmail.com
+							<a href="mailto:dw7753121@gmail.com?subject=Hello&body=Hello%20Akbar">
+								dw7753121@gmail.com
 							</a>
 						</motion.p>
 
