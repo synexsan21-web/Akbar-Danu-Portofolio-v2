@@ -40,11 +40,11 @@ function ScrollIndicator() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1, transition: { duration: 0.6, delay: 1.2 } }}
 					exit={{ opacity: 0, transition: { duration: 0.4 } }}>
-					<span className="text-[10px] uppercase tracking-[4px] text-gray-500 font-medium">
+					<span className="text-[10px] uppercase tracking-[4px] text-purple-300 font-medium">
 						Scroll
 					</span>
 					<motion.div
-						className="w-[1.5px] h-14 bg-gray-500 origin-top"
+						className="w-[1.5px] h-14 bg-purple-400 origin-top"
 						animate={{
 							scaleY: [0, 1, 1],
 							opacity: [0, 1, 0],
@@ -71,49 +71,38 @@ const MyPage = () => {
 						className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start"
 						initial={{ x: -100, opacity: 0 }}
 						whileInView={{ x: 0, opacity: 1 }}
-						transition={{
-							type: "spring",
-						}}>
+						transition={{ type: "spring" }}>
 						<div className="block md:hidden col-span-1 mx-auto my-10">
 							<div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
 								<Image
 									src={Me}
 									width={500}
 									height={500}
-									className="rounded-full w-full h-full object-cover "
+									className="rounded-full w-full h-full object-cover"
 									alt="Alvalens"
 									placeholder="blur"
 								/>
 							</div>
 						</div>
 						<motion.h3
-							className="uppercase text-xl mb-3 font-normal text tracking-[.5rem] text-gray-500"
+							className="uppercase text-xl mb-3 font-normal text tracking-[.5rem] text-purple-300"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.2,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.2, type: "spring" }}>
 							Alvalen Shafel
 						</motion.h3>
 						<motion.h1
-							className="text-black text-4xl md:text-6xl lg:text-6xl 2xl:text-8xl font-bold my-2 md:my-5"
+							className="text-white text-4xl md:text-6xl lg:text-6xl 2xl:text-8xl font-bold my-2 md:my-5"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.3,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.3, type: "spring" }}>
 							Full Stack Software Engineer
 						</motion.h1>
 						<motion.p
-							className="title text-md 2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
+							className="title text-md 2xl:text-xl mt-4 tracking-wider text-gray-200 leading-[1.7rem]"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.4,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.4, type: "spring" }}>
 							Hi! I&rsquo;am Alvalen, a Fullstack Software
 							Engineer with a growing focus on Artificial
 							Intelligence. I architect scalable,
@@ -124,10 +113,7 @@ const MyPage = () => {
 							className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.5,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.5, type: "spring" }}>
 							<Button variation="primary">
 								<Link
 									href={"/docs/cv.pdf"}
@@ -143,13 +129,10 @@ const MyPage = () => {
 						</motion.div>
 					</motion.div>
 					<motion.div
-						className="hidden md:flex col-span-1 mx-auto justify-center items-center "
+						className="hidden md:flex col-span-1 mx-auto justify-center items-center"
 						initial={{ x: 100, opacity: 0 }}
 						whileInView={{ x: 0, opacity: 1 }}
-						transition={{
-							delay: 0.7,
-							type: "spring",
-						}}>
+						transition={{ delay: 0.7, type: "spring" }}>
 						<div className="rounded-full h-auto w-auto max-w-[26vw] lg:px-12 grayscale hover:grayscale-0 transition-all ease duration-300">
 							<Image
 								src={Me}
@@ -165,25 +148,12 @@ const MyPage = () => {
 			</Section>
 			<Section>
 				<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
-					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
+					<div className="z-0 mb-48 md:mb-0 md:absolute md:top-1/2 md:right-[10%] md:-translate-y-1/2">
 						<motion.div
 							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
-							initial={{
-								x: 300,
-								opacity: 0,
-								z: -100,
-							}}
-							whileInView={{
-								x: 0,
-								opacity: 1,
-								z: 0,
-							}}
-							transition={{
-								delay: 0.5,
-								type: "spring",
-								stiffness: 100,
-								damping: 20,
-							}}>
+							initial={{ x: 300, opacity: 0, z: -100 }}
+							whileInView={{ x: 0, opacity: 1, z: 0 }}
+							transition={{ delay: 0.5, type: "spring", stiffness: 100, damping: 20 }}>
 							<Image
 								src={MeAbout}
 								fill
@@ -194,36 +164,27 @@ const MyPage = () => {
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
+					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
 						<motion.h1
-							className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
+							className="bg-purple-950 lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-white text-5xl md:text-8xl font-bold"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.1,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.1, type: "spring" }}>
 							About Me
 						</motion.h1>
 						<Hr />
 						<motion.p
-							className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+							className="title text-xl mt-4 tracking-wider text-gray-200 leading-[1.7rem] mb-5"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.2,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.2, type: "spring" }}>
 							A brief introduction my journey as a software
 							engineer.
 						</motion.p>
 						<motion.div
 							initial={{ y: 40, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
-							transition={{
-								delay: 0.3,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.3, type: "spring" }}>
 							<Button variation="primary">
 								<Link href="/about">Learn More</Link>
 							</Button>
@@ -233,25 +194,12 @@ const MyPage = () => {
 			</Section>
 			<Section>
 				<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
-					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
+					<div className="z-0 mb-48 md:mb-0 md:absolute md:top-1/2 md:right-[10%] md:-translate-y-1/2">
 						<motion.div
 							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
-							initial={{
-								x: 300,
-								opacity: 0,
-								z: -100,
-							}}
-							whileInView={{
-								x: 0,
-								opacity: 1,
-								z: 0,
-							}}
-							transition={{
-								delay: 0.5,
-								type: "spring",
-								stiffness: 100,
-								damping: 20,
-							}}>
+							initial={{ x: 300, opacity: 0, z: -100 }}
+							whileInView={{ x: 0, opacity: 1, z: 0 }}
+							transition={{ delay: 0.5, type: "spring", stiffness: 100, damping: 20 }}>
 							<Image
 								src={ProjectAll}
 								fill
@@ -262,28 +210,22 @@ const MyPage = () => {
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
+					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
 						<motion.h1
-							className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
+							className="bg-purple-950 lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-white text-5xl md:text-8xl font-bold"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.1,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.1, type: "spring" }}>
 							My Projects
 						</motion.h1>
 						<Hr />
 						<motion.p
-							className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+							className="title text-xl mt-4 tracking-wider text-gray-200 leading-[1.7rem] mb-5"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.2,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.2, type: "spring" }}>
 							Selected works that I&apos;ve built over the years.
-							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+							<span className="bg-transparent md:bg-purple-950 bg-opacity-50 xl:bg-transparent">
 								{" "}
 								and currently working on.
 							</span>
@@ -291,10 +233,7 @@ const MyPage = () => {
 						<motion.div
 							initial={{ y: 40, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
-							transition={{
-								delay: 0.3,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.3, type: "spring" }}>
 							<Button variation="primary">
 								<Link href="/projects">Learn More</Link>
 							</Button>
@@ -303,26 +242,13 @@ const MyPage = () => {
 				</div>
 			</Section>
 			<Section>
-				<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
-					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
+				<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
+					<div className="z-0 mb-48 md:mb-0 md:absolute md:top-1/2 md:right-[10%] md:-translate-y-1/2">
 						<motion.div
 							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
-							initial={{
-								x: 300,
-								opacity: 0,
-								z: -100,
-							}}
-							whileInView={{
-								x: 0,
-								opacity: 1,
-								z: 0,
-							}}
-							transition={{
-								delay: 0.5,
-								type: "spring",
-								stiffness: 100,
-								damping: 20,
-							}}>
+							initial={{ x: 300, opacity: 0, z: -100 }}
+							whileInView={{ x: 0, opacity: 1, z: 0 }}
+							transition={{ delay: 0.5, type: "spring", stiffness: 100, damping: 20 }}>
 							<Image
 								src={Setup}
 								fill
@@ -333,39 +259,30 @@ const MyPage = () => {
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
+					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
 						<motion.h1
-							className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold mb-3"
+							className="bg-purple-950 lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-white text-5xl md:text-8xl font-bold mb-3"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.1,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.1, type: "spring" }}>
 							Get In Touch
 						</motion.h1>
 						<Hr />
 						<motion.p
-							className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5"
+							className="title text-xl mt-4 tracking-wider text-gray-200 leading-[1.7rem] md:mb-5"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.2,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.2, type: "spring" }}>
 							Feel free to contact me if you have any{" "}
-							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+							<span className="bg-transparent md:bg-purple-950 bg-opacity-50 xl:bg-transparent">
 								questions or just want to say hi.
 							</span>
 						</motion.p>
 						<motion.p
-							className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+							className="title text-xl mt-4 tracking-wider text-gray-200 leading-[1.7rem] mb-5"
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{
-								delay: 0.3,
-								type: "spring",
-							}}>
+							transition={{ delay: 0.3, type: "spring" }}>
 							<a href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,">
 								alvalen.shafel04@gmail.com
 							</a>
@@ -375,86 +292,55 @@ const MyPage = () => {
 							<motion.a
 								href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,"
 								aria-label="Send email"
-								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
 								initial={{ y: 40, opacity: 0 }}
 								whileInView={{ y: 0, opacity: 1 }}
-								transition={{
-									y: { delay: 0.1 },
-									opacity: { delay: 0.2 },
-								}}>
-								<FontAwesomeIcon
-									icon={faEnvelope}
-									className="text-3xl"
-								/>
+								transition={{ y: { delay: 0.1 }, opacity: { delay: 0.2 } }}>
+								<FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
 							</motion.a>
-
 							<motion.a
 								href="https://github.com/Alvalens"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="GitHub profile"
-								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
-								transition={{
-									y: { delay: 0.2 },
-									opacity: { delay: 0.3 },
-								}}>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="text-3xl"
-								/>
+								transition={{ y: { delay: 0.2 }, opacity: { delay: 0.3 } }}>
+								<FontAwesomeIcon icon={faGithub} className="text-3xl" />
 							</motion.a>
 							<motion.a
 								href="https://www.instagram.com/alvalens_/"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Instagram profile"
-								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
-								transition={{
-									y: { delay: 0.3 },
-									opacity: { delay: 0.4 },
-								}}>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="text-3xl"
-								/>
+								transition={{ y: { delay: 0.3 }, opacity: { delay: 0.4 } }}>
+								<FontAwesomeIcon icon={faInstagram} className="text-3xl" />
 							</motion.a>
 							<motion.a
 								href="https://www.linkedin.com/in/alvalens/"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="LinkedIn profile"
-								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
-								transition={{
-									y: { delay: 0.4 },
-									opacity: { delay: 0.5 },
-								}}>
-								<FontAwesomeIcon
-									icon={faLinkedin}
-									className="text-3xl"
-								/>
+								transition={{ y: { delay: 0.4 }, opacity: { delay: 0.5 } }}>
+								<FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
 							</motion.a>
 							<motion.a
 								href="https://discordapp.com/users/bloody#6118"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Discord profile"
-								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
-								transition={{
-									y: { delay: 0.5 },
-									opacity: { delay: 0.6 },
-								}}>
-								<FontAwesomeIcon
-									icon={faDiscord}
-									className="text-3xl"
-								/>
+								transition={{ y: { delay: 0.5 }, opacity: { delay: 0.6 } }}>
+								<FontAwesomeIcon icon={faDiscord} className="text-3xl" />
 							</motion.a>
 						</div>
 					</div>
