@@ -1,5 +1,10 @@
 
+// Copyright (C) 2025 Alvalen Bilyunazra
+// This file is part of Alvalens-porto-2-nextJs.
+// Licensed under the GNU GPL v3.0. See LICENSE for details.
+
 "use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -60,6 +65,7 @@ function ScrollIndicator() {
 const MyPage = () => {
 	return (
 		<FullPageWrapper>
+			{/* hero section */}
 			<Section>
 				<div className="mx-auto w-[82%] max-w-screen-2xl grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden">
 					<motion.div
@@ -93,7 +99,7 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.4, type: "spring" }}>
-							hi! i&apos;m akbar danu, an adaptable professional with over 2 years
+							Hello, I am Akbar Danu, an adaptable professional with over 2 years
 							of experience in production, sales, customer service, and administration,
 							while also working as a freelance graphic designer with an interest
 							in visual communication and creative development.
@@ -138,6 +144,7 @@ const MyPage = () => {
 				</div>
 			</Section>
 
+			{/* about me section */}
 			<Section>
 				<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0 md:absolute md:top-1/2 md:right-[10%] md:-translate-y-1/2">
@@ -185,6 +192,7 @@ const MyPage = () => {
 				</div>
 			</Section>
 
+			{/* projects section */}
 			<Section>
 				<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0 md:absolute md:top-1/2 md:right-[10%] md:-translate-y-1/2">
@@ -218,10 +226,10 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.2, type: "spring" }}>
-							Selected works that I&apos;ve built over the years.
+							Selected works and projects I have developed over the years.
 							<span className="bg-transparent md:bg-purple-950 bg-opacity-50 xl:bg-transparent">
 								{" "}
-								and currently working on.
+								More projects are currently in progress.
 							</span>
 						</motion.p>
 						<motion.div
@@ -236,6 +244,7 @@ const MyPage = () => {
 				</div>
 			</Section>
 
+			{/* contact section */}
 			<Section>
 				<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0 md:absolute md:top-1/2 md:right-[10%] md:-translate-y-1/2">
@@ -285,6 +294,7 @@ const MyPage = () => {
 							</a>
 						</motion.p>
 
+						{/* social media icons */}
 						<div className="flex justify-center items-center space-x-4">
 							<motion.a
 								href="https://wa.me/6285607720056"
