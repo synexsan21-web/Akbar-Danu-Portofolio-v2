@@ -6,8 +6,8 @@ html {
 
 body {
 	font-family: var(--font-poppins), sans-serif !important;
-	color: black;
-	background-color: rgb(230, 230, 230);
+	color: #ffffff;
+	background-color: #09070f;
 }
 
 /* Hide scrollbar only for fullpage scroll pages */
@@ -24,8 +24,8 @@ html:has(body.fullpage-active)::-webkit-scrollbar {
 /* Hide scrollbar for IE, Edge and Firefox */
 body.fullpage-active,
 html:has(body.fullpage-active) {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 h1,
@@ -64,7 +64,6 @@ li {
 	@apply list-none relative;
 }
 
-
 td,
 th {
 	@apply py-2 px-3;
@@ -78,14 +77,14 @@ a[title]:hover:after {
 	padding: 0.5rem;
 	white-space: nowrap;
 	z-index: 1;
-	background-color: #333333;
-	color: #fff;
+	background-color: #211533;
+	color: #ffffff;
 	border-radius: 4px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	font-size: 0.8rem;
 }
 
 ::selection {
-	background: #333333;
-	color: #fff;
+	background: #8b5cf6;
+	color: #ffffff;
 }
