@@ -9,9 +9,9 @@ import Hr from "@/components/Hr";
 function Title() {
 	return (
 		<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
-			<div className="flex justify-center items-center flex-col my-5 self-start ">
+			<div className="flex justify-center items-center flex-col my-5 self-start">
 				<Hr variant="long"></Hr>
-				<h1 className="text-3xl font-bold mt-3">Who Am I?</h1>
+				<h1 className="text-3xl font-bold mt-3 text-white">Who Am I?</h1>
 			</div>
 		</div>
 	);
@@ -22,9 +22,9 @@ export default function About() {
 		<>
 			<Title />
 			<div className="relative mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
-				<div className="flex justify-center items-start flex-col mb-5 ">
-					<div className="images relative w-full  aspect-square">
-						<div className="absolute top-28 left-10 w-[50%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+				<div className="flex justify-center items-start flex-col mb-5">
+					<div className="images relative w-full aspect-square">
+						<div className="absolute top-28 left-10 w-[50%] aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
 							<motion.div
 								initial={{ opacity: 0, scale: 0.5, x: 100 }}
 								whileInView={{
@@ -43,7 +43,7 @@ export default function About() {
 								/>
 							</motion.div>
 						</div>
-						<div className="absolute top-16 right-28 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+						<div className="absolute top-16 right-28 w-[30%] aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
 							<motion.div
 								initial={{
 									opacity: 0,
@@ -67,7 +67,7 @@ export default function About() {
 								/>
 							</motion.div>
 						</div>
-						<div className="absolute bottom-16 right-20 w-[40%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+						<div className="absolute bottom-16 right-20 w-[40%] aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
 							<motion.div
 								initial={{
 									opacity: 0,
@@ -107,29 +107,28 @@ export default function About() {
 					}}
 					transition={{
 						delay: 0.5,
-
 						type: "spring",
 					}}>
-					<h2 className="text-2xl font-bold tracking-wider mb-3">
+					<h2 className="text-2xl font-bold tracking-wider mb-3 text-white">
 						Alvalen Shafelbilyunazra
 					</h2>
-					<p className="text-gray-600 text-justify title text-lg leading-relaxed">
+					<p className="text-gray-200 text-justify title text-lg leading-relaxed">
 						I am a{" "}
-						<span className="text-black font-medium">
+						<span className="text-purple-300 font-medium">
 							Product-Minded Software Engineer{" "}
 						</span>
 						specialized in bridging the gap between{" "}
-						<span className="text-black font-medium">
+						<span className="text-purple-300 font-medium">
 							Modern Web Ecosystems and Enterprise Architectures
 						</span>
 						. A Computer Science graduate from{" "}
-						<span className="text-black font-medium">
+						<span className="text-purple-300 font-medium">
 							Universitas Negeri Malang
 						</span>
 						, my professional journey is defined by high-stakes
 						projects, ranging from robust government-scale
 						microservices to sophisticated{" "}
-						<span className="text-black font-medium">
+						<span className="text-purple-300 font-medium">
 							RAG-powered SaaS products{" "}
 						</span>
 						designed to bring the power of Generative AI to
@@ -137,21 +136,21 @@ export default function About() {
 						<br />
 						<br />
 						Recognized as{" "}
-						<span className="text-black font-medium">
+						<span className="text-purple-300 font-medium">
 							Best Computer Science Graduate
 						</span>
 						, I bring a systems-engineering mindset to everything
 						I build, from architecting enterprise-grade backends
 						to founding and monetizing an{" "}
-						<span className="text-black font-medium">
+						<span className="text-purple-300 font-medium">
 							AI SaaS product
 						</span>
 						. Today, I engineer full-stack and AI systems at{" "}
-						<span className="text-black font-medium">
+						<span className="text-purple-300 font-medium">
 							Vouch Technology
 						</span>{" "}
 						while leading the technical vision as{" "}
-						<span className="text-black font-medium">
+						<span className="text-purple-300 font-medium">
 							Founder & CTO of Intervyou
 						</span>
 						, spanning multi-agent pipelines and RAG
