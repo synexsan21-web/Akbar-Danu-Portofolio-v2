@@ -78,7 +78,7 @@ const MyPage = () => {
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ type: "spring" }}>
 						<div className="block md:hidden col-span-1 mx-auto my-10">
-							<div className="bg-slate-500 rounded-full h-72 w-72 grayscale hover:grayscale-0 transition-all ease duration-300">
+							<div className="bg-slate-500 rounded-full w-60 h-72 overflow-hidden grayscale hover:grayscale-0 transition-all ease duration-300">
 								<Image
 									src={Me}
 									width={500}
@@ -134,7 +134,7 @@ const MyPage = () => {
 						initial={{ x: 100, opacity: 0 }}
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ delay: 0.7, type: "spring" }}>
-						<div className="rounded-full h-auto w-auto max-w-[30vw] lg:px-12 grayscale hover:grayscale-0 transition-all ease duration-300">
+						<div className="rounded-full w-[300px] h-[420px] overflow-hidden grayscale hover:grayscale-0 transition-all ease duration-300">
 							<Image
 								src={Me}
 								width={400}
