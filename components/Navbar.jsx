@@ -52,17 +52,17 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	return (
 		<>
 			<motion.div
-				className={`fixed z-[45] w-full h-screen flex items-center justify-center overflow-hidden`}
+				className="fixed z-[45] w-full h-screen flex items-center justify-center overflow-hidden"
 				variants={navVariant}
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
-				<div className="relative opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
+				<div className="relative opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-purple-950 min-w-[100vw]">
 					<div className="flex flex-col items-center space-y-8 my-auto mx-0 z-50">
 						{/* title */}
 						<motion.h1
 							variants={itemVariants}
 							animate={isNavOpen ? "open" : "closed"}
-							className="text-6xl font-bold text-white ">
+							className="text-6xl font-bold text-white">
 							Menu
 						</motion.h1>
 						<Link href="/#home">
@@ -138,29 +138,26 @@ const Navbar = () => {
 				ref={navRef}
 				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${
 					isNavOpen
-						? "backdrop-filter backdrop-blur-md bg-gray-700 bg-opacity-50"
+						? "backdrop-filter backdrop-blur-md bg-purple-950 bg-opacity-50"
 						: "backdrop-filter backdrop-blur-md"
-				} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
+				} inset-0 bg-opacity-50 flex flex-row justify-between items-center h-16 z-50`}>
 				<div>
-					<h1
-						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${
-							isNavOpen ? "text-white" : ""
-						}`}>
+					<h1 className="text-2xl ml-2 md:ml-0 text-white transition-colors ease duration-500">
 						Alvalens
 					</h1>
 				</div>
 				<div className="flex flex-row items-center">
 					<button
 						aria-label={isNavOpen ? "Close menu" : "Open menu"}
-						className="burger button flex flex-col justify-center items-center space-y-1.5 "
+						className="burger button flex flex-col justify-center items-center space-y-1.5"
 						onClick={toggleNav}>
 						<div
-							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
-								isNavOpen ? "rotate-45   bg-white translate-y-[2px]" : ""
+							className={`w-10 h-1 bg-white rounded-full transition-all ease duration-300 ${
+								isNavOpen ? "rotate-45 translate-y-[2px]" : ""
 							}`}></div>
 						<div
-							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
-								isNavOpen ? "-rotate-45 -translate-y-2 bg-white" : ""
+							className={`w-10 h-1 bg-white rounded-full transition-all ease duration-300 ${
+								isNavOpen ? "-rotate-45 -translate-y-2" : ""
 							}`}></div>
 					</button>
 				</div>
@@ -170,4 +167,5 @@ const Navbar = () => {
 		</>
 	);
 };
+
 export default Navbar;
