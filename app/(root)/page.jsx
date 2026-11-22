@@ -21,7 +21,11 @@ import Hr from "@/components/Hr";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import {
+	faInstagram,
+	faLinkedin,
+	faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ScrollIndicator() {
@@ -100,9 +104,9 @@ const MyPage = () => {
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.4, type: "spring" }}>
 							Hello, I am Akbar Danu, an adaptable professional with over 2 years
-							of experience in production, sales, customer service, and administration,
-							while also working as a freelance graphic designer with an interest
-							in visual communication and creative development.
+							of experience in production, sales, customer service, and
+							administration, while also working as a freelance graphic designer
+							with an interest in visual communication and creative development.
 						</motion.p>
 
 						<motion.div
@@ -226,7 +230,7 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.2, type: "spring" }}>
-							Selected works and projects I have developed over the years.
+							Selected works and projects I have built over the years.
 							<span className="bg-transparent md:bg-purple-950 bg-opacity-50 xl:bg-transparent">
 								{" "}
 								More projects are currently in progress.
@@ -258,13 +262,15 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Akbar Danu Setup"
+								alt="Akbar Danu"
 								placeholder="blur"
 							/>
 						</motion.div>
 					</div>
 
-					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
+					<div
+						id="contact"
+						className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
 						<motion.h1
 							className="bg-purple-950 lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-white text-5xl md:text-8xl font-bold mb-3"
 							initial={{ x: -100, opacity: 0 }}
@@ -273,6 +279,7 @@ const MyPage = () => {
 							Get In Touch
 						</motion.h1>
 						<Hr />
+
 						<motion.p
 							className="title text-xl mt-4 tracking-wider text-gray-200 leading-[1.7rem] md:mb-5"
 							initial={{ x: -100, opacity: 0 }}
@@ -289,7 +296,7 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.3, type: "spring" }}>
-							<a href="mailto:danuhardja2@gmail.com?subject=Hello&body=Hello Akbar,">
+							<a href="mailto:danuhardja2@gmail.com?subject=Hello&body=Hello%20Akbar">
 								danuhardja2@gmail.com
 							</a>
 						</motion.p>
