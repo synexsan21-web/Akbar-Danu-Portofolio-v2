@@ -1,6 +1,5 @@
 
 "use client";
-
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -17,11 +16,7 @@ import Hr from "@/components/Hr";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faInstagram,
-	faLinkedin,
-	faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ScrollIndicator() {
@@ -98,11 +93,10 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.4, type: "spring" }}>
-							hi! i&apos;m akbar danu, an adaptable professional with over 2
-							years of experience in production, sales, customer service, and
-							administration, while also working as a freelance graphic
-							designer with an interest in visual communication and creative
-							development.
+							hi! i'm akbar danu, an adaptable professional with over 2 years
+							of experience in production, sales, customer service, and administration,
+							while also working as a freelance graphic designer with an interest
+							in visual communication and creative development.
 						</motion.p>
 
 						<motion.div
@@ -204,7 +198,7 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens Setup"
+								alt="Akbar Danu Projects"
 								placeholder="blur"
 							/>
 						</motion.div>
@@ -255,7 +249,7 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens Setup"
+								alt="Akbar Danu Setup"
 								placeholder="blur"
 							/>
 						</motion.div>
@@ -291,38 +285,29 @@ const MyPage = () => {
 							</a>
 						</motion.p>
 
+						{/* social media icons */}
 						<div className="flex justify-center items-center space-x-4">
-							<motion.a
-								href="mailto:danuhardja2@gmail.com?subject=Hello&body=Hello Akbar,"
-								aria-label="Send email"
-								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
-								initial={{ y: 40, opacity: 0 }}
-								whileInView={{ y: 0, opacity: 1 }}
-								transition={{ y: { delay: 0.1 }, opacity: { delay: 0.2 } }}>
-								<FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
-							</motion.a>
-
 							<motion.a
 								href="https://wa.me/6285607720056"
 								target="_blank"
 								rel="noopener noreferrer"
-								aria-label="WhatsApp profile"
+								aria-label="WhatsApp"
 								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
-								initial={{ opacity: 0, y: 40 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								transition={{ y: { delay: 0.2 }, opacity: { delay: 0.3 } }}>
+								initial={{ y: 40, opacity: 0 }}
+								whileInView={{ y: 0, opacity: 1 }}
+								transition={{ y: { delay: 0.1 }, opacity: { delay: 0.2 } }}>
 								<FontAwesomeIcon icon={faWhatsapp} className="text-3xl" />
 							</motion.a>
 
 							<motion.a
-								href="https://www.instagram.com/danhrdja_?hvrq=MWgwY2hzM283ejVjOA=="
+								href="https://www.instagram.com/danhrdja_/"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Instagram profile"
 								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
-								transition={{ y: { delay: 0.3 }, opacity: { delay: 0.4 } }}>
+								transition={{ y: { delay: 0.2 }, opacity: { delay: 0.3 } }}>
 								<FontAwesomeIcon icon={faInstagram} className="text-3xl" />
 							</motion.a>
 
@@ -334,7 +319,7 @@ const MyPage = () => {
 								className="flex justify-center items-center bg-purple-600/30 w-14 h-14 rounded-full text-white hover:bg-purple-600/50 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
-								transition={{ y: { delay: 0.4 }, opacity: { delay: 0.5 } }}>
+								transition={{ y: { delay: 0.3 }, opacity: { delay: 0.4 } }}>
 								<FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
 							</motion.a>
 						</div>
