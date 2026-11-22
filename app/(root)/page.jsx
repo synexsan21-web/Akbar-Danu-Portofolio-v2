@@ -97,7 +97,7 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.4, type: "spring" }}>
-							hi! i'm akbar danu, an adaptable professional with over 2 years
+							hi! i&apos;m akbar danu, an adaptable professional with over 2 years
 							of experience in production, sales, customer service, and administration,
 							while also working as a freelance graphic designer with an interest
 							in visual communication and creative development.
