@@ -93,7 +93,7 @@ const MyPage = () => {
 							initial={{ x: -100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.4, type: "spring" }}>
-							hi! i'm akbar danu, an adaptable professional with over 2 years
+							hi! i&apos;m akbar danu, an adaptable professional with over 2 years
 							of experience in production, sales, customer service, and administration,
 							while also working as a freelance graphic designer with an interest
 							in visual communication and creative development.
@@ -285,7 +285,6 @@ const MyPage = () => {
 							</a>
 						</motion.p>
 
-						{/* social media icons */}
 						<div className="flex justify-center items-center space-x-4">
 							<motion.a
 								href="https://wa.me/6285607720056"
@@ -300,7 +299,7 @@ const MyPage = () => {
 							</motion.a>
 
 							<motion.a
-								href="https://www.instagram.com/danhrdja_/"
+								href="https://www.instagram.com/danhrdja_?hvrq=MWgwY2hzM283ejVjOA=="
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Instagram profile"
