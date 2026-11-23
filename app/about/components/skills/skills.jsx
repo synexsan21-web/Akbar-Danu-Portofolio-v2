@@ -1,113 +1,85 @@
+
 "use client";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { CodepenIcon, WebhookIcon, ActivityIcon, MobileIcon } from "./icons";
+import {
+	CodepenIcon,
+	WebhookIcon,
+	ActivityIcon,
+	MobileIcon,
+} from "./icons";
 
 const skillCategories = {
-	web: {
-		title: "Web Development",
+	manufacturing: {
+		title: "Manufacturing & Production",
 		icon: CodepenIcon,
-		description: "Building modern, responsive web applications",
-		languages: [
-			{ name: "NextJS", highlight: true },
-			{ name: "React", highlight: true },
-			{ name: "TypeScript", highlight: true },
-			{ name: "JavaScript", highlight: false },
-			{ name: "Laravel", highlight: true },
-			{ name: "HTML", highlight: false },
-			{ name: "CSS", highlight: false },
-			{ name: "TailwindCSS", highlight: true },
-			{ name: "Bootstrap", highlight: false },
-			{ name: "Flask", highlight: false },
-			{ name: "Django", highlight: false },
-			{ name: "Firebase", highlight: false },
+		description: "Production processes, packaging, and workplace operations",
+		primaryTitle: "Operational Skills",
+		secondaryTitle: "Workplace Competencies",
+		skills: [
+			"Production Operations",
+			"Product Packaging",
+			"Manufacturing Processes",
 		],
-		tools: [
-			"Vercel",
-			"Vite",
-			"Figma",
-			"Docker",
-			"Kubernetes",
-			"Git",
-			"Github",
-			"GitLab",
-			"Bitbucket",
-			"Google Cloud",
-			"Postman",
+		competencies: [
+			"Teamwork",
+			"Work Discipline",
+			"Attention to Detail",
 		],
 	},
-	api: {
-		title: "Backend & API",
+	food: {
+		title: "Food & Beverage Service",
 		icon: WebhookIcon,
-		description: "Creating robust and scalable backend services",
-		languages: [
-			{ name: "Java Spring Boot", highlight: true },
-			{ name: "NodeJS", highlight: false },
-			{ name: "NestJS", highlight: true },
-			{ name: "ExpressJS", highlight: true },
-			{ name: "PHP", highlight: false },
-			{ name: "Laravel", highlight: true },
-			{ name: "FastAPI", highlight: true },
-			{ name: "Python", highlight: false },
-			{ name: "Flask", highlight: false },
-			{ name: "Django", highlight: false },
-			{ name: "PostgreSQL", highlight: true },
-			{ name: "MySQL", highlight: true },
-			{ name: "MongoDB", highlight: false },
-			{ name: "Redis", highlight: false },
-			{ name: "Firebase", highlight: false },
+		description: "Food preparation, service operations, and customer experience",
+		primaryTitle: "Service Operations",
+		secondaryTitle: "Service Competencies",
+		skills: [
+			"Food Preparation",
+			"Food & Beverage Operations",
+			"Food Service Sanitation",
 		],
-		tools: [
-			"Docker",
-			"Kubernetes",
-			"Postman",
-			"Swagger",
-			"Git",
-			"Github",
-			"GitLab",
-			"Bitbucket",
-			"Google Cloud",
-			"IBM Cloud",
-			"Sentry",
+		competencies: [
+			"Customer Service",
+			"Teamwork",
+			"Interpersonal Communication",
 		],
 	},
-	ai: {
-		title: "AI & Machine Learning",
+	sales: {
+		title: "Sales & Commercial",
 		icon: ActivityIcon,
-		description: "Developing intelligent solutions with ML/AI",
-		languages: [
-			{ name: "RAG Pipelines", highlight: true },
-			{ name: "Gemini API", highlight: true },
-			{ name: "OpenAI API", highlight: true },
-			{ name: "LangChain", highlight: true },
-			{ name: "Python", highlight: true },
-			{ name: "TensorFlow", highlight: true },
-			{ name: "PyTorch", highlight: false },
-			{ name: "Scikit-learn", highlight: false },
-			{ name: "Pandas", highlight: false },
-			{ name: "NumPy", highlight: false },
-			{ name: "Jupyter", highlight: false },
+		description: "Sales activities, product knowledge, and business communication",
+		primaryTitle: "Sales Competencies",
+		secondaryTitle: "Commercial Competencies",
+		skills: [
+			"Sales & Marketing",
+			"Sales Operations",
+			"Product Knowledge",
+			"Agricultural Product Knowledge",
 		],
-		tools: [
-			"Jupyter Notebook",
-			"Google Colab",
-			"Google Cloud AI",
-			"AWS SageMaker",
-			"IBM Watson",
+		competencies: [
+			"Sales Negotiation",
+			"Interpersonal Communication",
+			"Customer Relations",
 		],
 	},
-	mobile: {
-		title: "Mobile Development",
+	administration: {
+		title: "Administration & Creative",
 		icon: MobileIcon,
-		description: "Cross-platform mobile app development",
-		languages: [
-			{ name: "React Native", highlight: true },
-			{ name: "Flutter", highlight: true },
-			{ name: "JavaScript", highlight: false },
-			{ name: "TypeScript", highlight: false },
-			{ name: "Dart", highlight: false },
+		description: "Administrative assistance and creative visual development",
+		primaryTitle: "Administrative Competencies",
+		secondaryTitle: "Creative Competencies",
+		skills: [
+			"Personal Assistance",
+			"Administrative Support",
+			"Time Management",
+			"Problem Solving",
 		],
-		tools: ["Android Studio", "React Native CLI"],
+		competencies: [
+			"Graphic Design",
+			"Editing",
+			"Typography",
+		],
 	},
 };
 
@@ -126,7 +98,8 @@ function SkillCard({ skill, isSelected, onClick }) {
 			whileTap={{ scale: 0.97 }}
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}
-			transition={{ duration: 0.3 }}>
+			transition={{ duration: 0.3 }}
+		>
 			{!isSelected && (
 				<div className="absolute inset-0 rounded-2xl transition-opacity duration-300 opacity-0 group-hover:opacity-50 bg-gradient-to-r from-purple-500/20 to-purple-800/20 blur-xl" />
 			)}
@@ -137,9 +110,11 @@ function SkillCard({ skill, isSelected, onClick }) {
 						isSelected
 							? "bg-purple-500/40"
 							: "bg-purple-500/15 group-hover:bg-purple-500/30"
-					}`}>
+					}`}
+				>
 					<Icon className="w-8 h-8 text-white" />
 				</div>
+
 				<div>
 					<h3 className="font-semibold text-white text-lg mb-2">
 						{skill.title}
@@ -167,16 +142,19 @@ function SkillDetails({ selectedSkill }) {
 			animate={{ opacity: 1, y: 0 }}
 			exit={{ opacity: 0, y: -20 }}
 			transition={{ duration: 0.5 }}
-			className="mt-12 space-y-8">
-			{/* Languages & Frameworks Section */}
+			className="mt-12 space-y-8"
+		>
+			{/* First Skills Panel */}
 			<motion.div
 				className="bg-purple-950/60 border border-purple-400/30 rounded-2xl p-8 shadow-sm"
 				initial={{ opacity: 0, x: -50 }}
 				animate={{ opacity: 1, x: 0 }}
-				transition={{ delay: 0.2 }}>
+				transition={{ delay: 0.2 }}
+			>
 				<h3 className="text-2xl font-semibold text-white mb-6 text-center">
-					Technology Stack
+					{selectedSkill.primaryTitle}
 				</h3>
+
 				<motion.div
 					key={selectedSkill.title}
 					className="flex flex-wrap justify-center gap-3"
@@ -190,39 +168,33 @@ function SkillDetails({ selectedSkill }) {
 						},
 					}}
 					initial="hidden"
-					animate="show">
-					{selectedSkill.languages.map((skill) => (
+					animate="show"
+				>
+					{selectedSkill.skills.map((skill) => (
 						<motion.span
-							key={skill.name}
+							key={skill}
 							variants={tagVariants}
-							className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default flex items-center gap-2
-								${
-									skill.highlight
-										? "bg-purple-600/50 text-white shadow-md border border-purple-400/50 scale-105 z-10 hover:bg-purple-500/60 hover:shadow-lg"
-										: "bg-purple-900/50 border border-purple-400/20 text-gray-200 hover:bg-purple-700/50"
-								}`}>
-							{skill.highlight && (
-								<span className="text-purple-200 text-[10px] animate-pulse">
-									✦
-								</span>
-							)}
-							{skill.name}
+							className="px-4 py-2 rounded-full text-sm font-medium bg-purple-600/50 text-white shadow-md border border-purple-400/50"
+						>
+							{skill}
 						</motion.span>
 					))}
 				</motion.div>
 			</motion.div>
 
-			{/* Tools Section */}
+			{/* Second Skills Panel */}
 			<motion.div
 				className="bg-purple-950/50 border border-purple-400/20 rounded-2xl p-8"
 				initial={{ opacity: 0, x: 50 }}
 				animate={{ opacity: 1, x: 0 }}
-				transition={{ delay: 0.4 }}>
+				transition={{ delay: 0.4 }}
+			>
 				<h3 className="text-xl font-medium text-purple-200 mb-6 text-center uppercase tracking-wider">
-					Infrastructure & Tools
+					{selectedSkill.secondaryTitle}
 				</h3>
+
 				<motion.div
-					key={selectedSkill.title + "-tools"}
+					key={selectedSkill.title + "-competencies"}
 					className="flex flex-wrap justify-center gap-3"
 					variants={{
 						hidden: {},
@@ -234,13 +206,15 @@ function SkillDetails({ selectedSkill }) {
 						},
 					}}
 					initial="hidden"
-					animate="show">
-					{selectedSkill.tools.map((tool) => (
+					animate="show"
+				>
+					{selectedSkill.competencies.map((item) => (
 						<motion.span
-							key={tool}
+							key={item}
 							variants={tagVariants}
-							className="px-4 py-1.5 bg-purple-900/60 border border-purple-400/20 rounded-lg text-gray-200 text-xs font-medium">
-							{tool}
+							className="px-4 py-1.5 bg-purple-900/60 border border-purple-400/20 rounded-lg text-gray-200 text-xs font-medium"
+						>
+							{item}
 						</motion.span>
 					))}
 				</motion.div>
@@ -250,7 +224,7 @@ function SkillDetails({ selectedSkill }) {
 }
 
 export default function Skills() {
-	const [selectedCategory, setSelectedCategory] = useState("web");
+	const [selectedCategory, setSelectedCategory] = useState("manufacturing");
 
 	return (
 		<div className="relative">
@@ -259,13 +233,15 @@ export default function Skills() {
 					initial={{ opacity: 0, y: -20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
-					className="text-center space-y-4 mb-16">
+					className="text-center space-y-4 mb-16"
+				>
 					<h2 className="text-5xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">
 						Skills & Expertise
 					</h2>
+
 					<p className="text-gray-300 max-w-2xl mx-auto text-lg leading-relaxed">
-						Explore my technical skills across different domains. Click on any
-						category to see the specific technologies and tools I work with.
+						Explore my professional skills and competencies across different
+						fields. Select a category to discover my areas of expertise.
 					</p>
 				</motion.div>
 
@@ -276,7 +252,8 @@ export default function Skills() {
 							key={key}
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ delay: index * 0.1 }}>
+							transition={{ delay: index * 0.1 }}
+						>
 							<SkillCard
 								skill={skill}
 								isSelected={selectedCategory === key}
@@ -286,9 +263,12 @@ export default function Skills() {
 					))}
 				</div>
 
-				{/* Skill Details */}
+				{/* Dynamic Skill Details */}
 				<AnimatePresence mode="wait">
-					<SkillDetails selectedSkill={skillCategories[selectedCategory]} />
+					<SkillDetails
+						key={selectedCategory}
+						selectedSkill={skillCategories[selectedCategory]}
+					/>
 				</AnimatePresence>
 			</div>
 		</div>
