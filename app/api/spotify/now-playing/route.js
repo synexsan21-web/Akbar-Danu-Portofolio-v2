@@ -56,11 +56,14 @@ export async function GET() {
     }
 
     if (!songResponse.ok) {
-      return Response.json(
-        { isPlaying: false, error: "Gagal mengambil lagu" },
-        { status: songResponse.status }
-      );
-    }
+  const errorData = await songResponse.json().catch(() => ({}));
+
+  return Response.json({
+    isPlaying: false,
+    spotifyStatus: songResponse.status,
+    spotifyMessage: errorData.error?.message || "Tidak diketahui",
+  });
+}
 
     const song = await songResponse.json();
 
