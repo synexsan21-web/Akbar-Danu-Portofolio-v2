@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Card from "./spotify/card";
 import { motion } from "framer-motion";
@@ -35,7 +36,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me1}
-									alt="Alvalens"
+									alt="Akbar Danu"
 									fill
 									sizes="(max-width: 768px) 80vw, 40vw"
 									className="object-cover"
@@ -43,6 +44,7 @@ export default function About() {
 								/>
 							</motion.div>
 						</div>
+
 						<div className="absolute top-16 right-28 w-[30%] aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
 							<motion.div
 								initial={{
@@ -59,7 +61,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me2}
-									alt="Alvalens"
+									alt="Akbar Danu"
 									fill
 									sizes="(max-width: 768px) 60vw, 25vw"
 									className="object-cover"
@@ -67,6 +69,7 @@ export default function About() {
 								/>
 							</motion.div>
 						</div>
+
 						<div className="absolute bottom-16 right-20 w-[40%] aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
 							<motion.div
 								initial={{
@@ -85,7 +88,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me3}
-									alt="Alvalens"
+									alt="Akbar Danu"
 									fill
 									sizes="(max-width: 768px) 80vw, 35vw"
 									className="object-cover"
@@ -95,6 +98,7 @@ export default function About() {
 						</div>
 					</div>
 				</div>
+
 				<motion.div
 					className="flex justify-center items-start flex-col mb-5 md:px-10"
 					initial={{
@@ -110,54 +114,40 @@ export default function About() {
 						type: "spring",
 					}}>
 					<h2 className="text-2xl font-bold tracking-wider mb-3 text-white">
-						Alvalen Shafelbilyunazra
+						Akbar Danu
 					</h2>
+
 					<p className="text-gray-200 text-justify title text-lg leading-relaxed">
-						I am a{" "}
-						<span className="text-purple-300 font-medium">
-							Product-Minded Software Engineer{" "}
-						</span>
-						specialized in bridging the gap between{" "}
-						<span className="text-purple-300 font-medium">
-							Modern Web Ecosystems and Enterprise Architectures
-						</span>
-						. A Computer Science graduate from{" "}
-						<span className="text-purple-300 font-medium">
-							Universitas Negeri Malang
-						</span>
-						, my professional journey is defined by high-stakes
-						projects, ranging from robust government-scale
-						microservices to sophisticated{" "}
-						<span className="text-purple-300 font-medium">
-							RAG-powered SaaS products{" "}
-						</span>
-						designed to bring the power of Generative AI to
-						end-users.
+						Perjalanan profesional saya memberi kesempatan untuk mengenal berbagai bidang pekerjaan, mulai dari operasional bisnis dan pelayanan pelanggan hingga proses produksi dan desain kreatif. Dari berbagai pengalaman tersebut, saya memperoleh pemahaman mengenai koordinasi kerja, pengelolaan administrasi, distribusi produk, penanganan pelanggan, serta proses operasional sehari-hari.
+
 						<br />
 						<br />
-						Recognized as{" "}
+
+						Dalam beberapa pekerjaan sebelumnya, saya terlibat dalam pengelolaan dokumentasi dan jadwal, koordinasi tim, kegiatan penjualan dan pemasaran, pelayanan pelanggan, hingga menjaga kualitas produk. Berbagai tanggung jawab tersebut membentuk kemampuan saya dalam bekerja secara fleksibel, teliti, serta beradaptasi dengan kebutuhan dan lingkungan kerja yang berbeda.
+
+						<br />
+						<br />
+
+						Saat ini, saya sedang menempuh pendidikan di bidang{" "}
 						<span className="text-purple-300 font-medium">
-							Best Computer Science Graduate
+							Manajemen Ritel di Universitas Bojonegoro
 						</span>
-						, I bring a systems-engineering mindset to everything
-						I build, from architecting enterprise-grade backends
-						to founding and monetizing an{" "}
+						. Saya memiliki ketertarikan pada dunia bisnis ritel, pemasaran, pengelolaan persediaan, dan manajemen operasional. Selain itu, saya juga mengembangkan kemampuan sebagai{" "}
 						<span className="text-purple-300 font-medium">
-							AI SaaS product
+							desainer grafis lepas
 						</span>
-						. Today, I engineer full-stack and AI systems at{" "}
+						, khususnya dalam komunikasi visual dan pengembangan ide kreatif melalui desain digital.
+
+						<br />
+						<br />
+
+						Saya terus mengembangkan kemampuan di bidang{" "}
 						<span className="text-purple-300 font-medium">
-							Vouch Technology
-						</span>{" "}
-						while leading the technical vision as{" "}
-						<span className="text-purple-300 font-medium">
-							Founder & CTO of Intervyou
+							desain grafis, pemasaran digital, operasional penjualan, dan manajemen bisnis
 						</span>
-						, spanning multi-agent pipelines and RAG
-						architectures. I remain dedicated to delivering
-						measurable business value at the intersection of web
-						technologies and artificial intelligence.
+						. Dengan menggabungkan pengalaman kerja, pengetahuan akademis, dan keterampilan kreatif, saya ingin memperluas wawasan profesional serta memberikan kontribusi yang bermanfaat dalam berbagai proyek dan peluang bisnis di masa mendatang.
 					</p>
+
 					<Card />
 				</motion.div>
 			</div>
