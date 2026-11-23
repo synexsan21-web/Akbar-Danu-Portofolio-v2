@@ -56,10 +56,7 @@ export default function Page() {
 						</h1>
 						<Hr />
 						<p className="title text-xl mt-4 tracking-wider text-gray-200 leading-[1.7rem] mb-5">
-							A brief introduction my journey as a{" "}
-							<span className="bg-transparent md:bg-purple-950 bg-opacity-50 xl:bg-transparent">
-								software engineer.
-							</span>
+							A brief introduction to my profesional journey.
 						</p>
 						<motion.div
 							initial={{ opacity: 0 }}
