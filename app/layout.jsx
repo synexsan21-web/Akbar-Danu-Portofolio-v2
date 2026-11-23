@@ -24,38 +24,30 @@ const jost = Jost({
 });
 
 export const metadata = {
-	metadataBase: new URL("https://www.alvalens.my.id"),
-	title: "Alvalens | Portofolio",
-
+	metadataBase: new URL("https://akbar-danu-portofolio-v2-5225.vercel.app"),
+	title: "Akbar Danu | Portfolio",
 	description:
-		"Alvalen, Product-Minded Software Engineer specializing in Next.js, Spring Boot, and AI Solutions. Founder & CTO of Intervyou.",
-
-	author: "Alvalen Shafelbilyunazra",
-	siteUrl: "https://www.alvalens.my.id",
-	applicationName: "Alvalens",
-
+		"Akbar Danu - Professional experience in production, sales, customer service, administration, and graphic design.",
+	applicationName: "Akbar Danu",
+	authors: [{ name: "Akbar Danu" }],
 	keywords: [
-		"alvalens",
-		"alvalen",
-		"alvalen shafel",
-		"shafel",
-		"alvalen shafelbilyunazra",
-		"alvalen shafel bilyunazra",
-		"bloodfallen",
-		"alvalen porto",
-		"alvalen um",
+		"Akbar Danu",
+		"Portfolio",
+		"Professional Experience",
+		"Graphic Design",
+		"Sales",
+		"Administration",
 	],
-
 	openGraph: {
 		type: "website",
-		url: "https://www.alvalens.my.id",
-		title: "Alvalens | Portofolio",
-		siteName: "Alvalens | Portofolio",
-		description: "My name is Alvalens, This is my portofolio website.",
+		url: "https://akbar-danu-portofolio-v2-5225.vercel.app",
+		title: "Akbar Danu | Portfolio",
+		siteName: "Akbar Danu Portfolio",
+		description: "Personal portfolio of Akbar Danu.",
 		images: [
 			{
 				url: "/og-image-rev.png",
-				alt: "Alvalens Portofolio",
+				alt: "Akbar Danu Portfolio",
 				width: 1200,
 				height: 630,
 			},
@@ -66,22 +58,8 @@ export const metadata = {
 const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "Person",
-	name: "Alvalen Shafelbilyunazra",
-	url: "https://www.alvalens.my.id",
-	jobTitle: "Full Stack Software Engineer",
-	worksFor: [
-		{ "@type": "Organization", name: "Vouch Technology" },
-		{ "@type": "Organization", name: "Intervyou" },
-	],
-	alumniOf: {
-		"@type": "CollegeOrUniversity",
-		name: "Universitas Negeri Malang",
-	},
-	sameAs: [
-		"https://github.com/Alvalens",
-		"https://www.linkedin.com/in/alvalens/",
-		"https://www.instagram.com/alvalens_/",
-	],
+	name: "Akbar Danu",
+	url: "https://akbar-danu-portofolio-v2-5225.vercel.app",
 };
 
 export default function RootLayout({ children }) {
