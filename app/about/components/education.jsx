@@ -189,37 +189,35 @@ export default function Education() {
 							</div>
 
 							<div className="flex items-center gap-2">
-								<p className="text-gray-300 text-justify title text-lg">
-									I am currently pursuing my Bachelor&apos;s
-degree in{" "}
-									<span className="text-purple-200 font-medium">
-										Retail Management at Universitas
-										Bojonegoro
-									</span>
-									. My academic journey focuses on
-									understanding business operations, retail
-									management, marketing strategies, and
-									consumer behavior.
-									<br />
-									<br />
-									Throughout my studies, I have developed
-									knowledge in{" "}
-									<span className="text-purple-200 font-medium">
-										retail operations, inventory management,
-										supply chain, sales, and digital
-										marketing
-									</span>
-									. These subjects have helped me understand
-									how businesses operate, adapt to market
-									needs, and create value for customers.
-									<br />
-									<br />
-									I aim to apply the knowledge and skills
-									gained during my education to real-world
-									business environments while continuing to
-									grow professionally.
-								</p>
-							</div>
+	<p className="text-gray-300 text-justify title text-lg">
+		Saat ini saya sedang menempuh pendidikan
+		Sarjana di bidang{" "}
+		<span className="text-purple-200 font-medium">
+			Manajemen Ritel di Universitas Bojonegoro
+		</span>
+		. Perjalanan akademik saya berfokus pada pemahaman
+		operasional bisnis, manajemen ritel, strategi
+		pemasaran, dan perilaku konsumen.
+		<br />
+		<br />
+		Selama masa perkuliahan, saya telah mempelajari
+		berbagai bidang seperti{" "}
+		<span className="text-purple-200 font-medium">
+			operasional ritel, manajemen persediaan,
+			rantai pasok, penjualan, dan pemasaran digital
+		</span>
+		. Berbagai bidang tersebut membantu saya memahami
+		bagaimana bisnis berjalan, beradaptasi dengan
+		kebutuhan pasar, serta menciptakan nilai bagi
+		pelanggan.
+		<br />
+		<br />
+		Saya berharap dapat menerapkan pengetahuan dan
+		keterampilan yang diperoleh selama pendidikan ke
+		dalam dunia bisnis secara langsung, sekaligus
+		terus mengembangkan kemampuan profesional saya.
+	</p>
+</div>
 
 							<div className="flex flex-wrap gap-2 mt-4 text-sm">
 								<div className="bg-purple-700/40 border border-purple-400/30 text-purple-100 px-3 py-1 rounded-2xl">
