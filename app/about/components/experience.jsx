@@ -118,22 +118,20 @@ function TimelineCard({ experience, index, isEven }) {
 			initial={{ opacity: 0, y: -20 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ delay: index * 0.15, duration: 0.5 }}
-			className={`flex ps-10 md:ps-0 ${
+			className={`flex px-10 md:px-0 ${
 				isEven
 					? "md:justify-center md:translate-x-68"
 					: "md:justify-center md:-translate-x-68"
 			} justify-center mb-4`}
 		>
-			<div className="bg-gradient-to-r from-purple-950 to-purple-800 text-white px-12 py-3 rounded-xl shadow-lg border border-purple-400/40 min-w-max">
-				<div className="flex items-center justify-center gap-6">
-					<div className="text-center">
+			<div className="bg-gradient-to-r from-purple-950 to-purple-800 text-white px-5 md:px-8 py-4 rounded-xl shadow-lg border border-purple-400/40 w-full max-w-[440px]">
+				<div className="grid grid-cols-2 gap-y-3">
+					<div className="text-center border-r border-purple-400/50">
 						<div className="text-sm font-bold">
 							{experience.startDate}
 						</div>
 						<div className="text-xs text-purple-200">Start</div>
 					</div>
-
-					<div className="w-px h-8 bg-purple-400/50"></div>
 
 					<div className="text-center">
 						<div className="text-sm font-bold">
@@ -142,10 +140,8 @@ function TimelineCard({ experience, index, isEven }) {
 						<div className="text-xs text-purple-200">End</div>
 					</div>
 
-					<div className="w-px h-8 bg-purple-400/50"></div>
-
-					<div className="text-center">
-						<div className="text-sm font-medium text-purple-200">
+					<div className="col-span-2 border-t border-purple-400/30 pt-3 text-center">
+						<div className="text-sm font-medium text-purple-100 break-words">
 							{experience.location}
 						</div>
 						<div className="text-xs text-purple-200">Location</div>
