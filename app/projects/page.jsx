@@ -9,7 +9,6 @@ import Image from "next/image";
 // images
 import Intervyou1 from "@/public/image/projects/web/intervyou/intervyou-1.png";
 import Intervyou2 from "@/public/image/projects/web/intervyou/intervyou-2.jpeg";
-import Intervyou3 from "@/public/image/projects/web/intervyou/intervyou-3.webp";
 import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
