@@ -190,8 +190,8 @@ export default function Education() {
 
 							<div className="flex items-center gap-2">
 								<p className="text-gray-300 text-justify title text-lg">
-									I am currently pursuing my Bachelor's
-									degree in{" "}
+									I am currently pursuing my Bachelor&apos;s
+degree in{" "}
 									<span className="text-purple-200 font-medium">
 										Retail Management at Universitas
 										Bojonegoro
