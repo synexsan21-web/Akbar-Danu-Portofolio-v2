@@ -1,10 +1,12 @@
+
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "About | Alvalens",
+  title: "About | Akbar Danu",
   description:
-    "Product-Minded Software Engineer specializing in Next.js, Spring Boot, and AI Solutions. Founder & CTO of Intervyou. Computer Science graduate from Universitas Negeri Malang.",
+    "Retail Management student at Universitas Bojonegoro, interested in business operations, retail management, marketing strategies, and consumer behavior.",
 };
+
 export default function Layout({ children }) {
   return (
     <>
