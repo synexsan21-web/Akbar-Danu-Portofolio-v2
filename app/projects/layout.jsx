@@ -1,10 +1,12 @@
+
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Projects | Alvalens",
+  title: "Projects | Akbar Danu",
   description:
-    "Selected projects spanning web development, AI/ML, and more. Built with Next.js, Spring Boot, Python, and modern frameworks.",
+    "A collection of projects showcasing my work, skills, and experience in development and technology.",
 };
+
 export default function Layout({ children }) {
   return (
     <>
