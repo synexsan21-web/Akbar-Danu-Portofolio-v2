@@ -13,7 +13,7 @@ import Experience from "./components/experience.jsx";
 import Education from "./components/education.jsx";
 
 // images
-import Hero from "@/public/image/me2.webp";
+import Hero from "@/public/image/me1.webp";
 
 import Hr from "@/components/Hr";
 import About from "./components/about/about.jsx";
