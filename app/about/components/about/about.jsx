@@ -3,8 +3,8 @@ import Image from "next/image";
 import Card from "./spotify/card";
 import { motion } from "framer-motion";
 import Me1 from "@/public/image/me1.webp";
-import Me2 from "@/public/image/me2.webp";
-import Me3 from "@/public/image/me3.webp";
+import Me2 from "@/public/image/me3.webp";
+import Me3 from "@/public/image/me2.webp";
 import Hr from "@/components/Hr";
 
 function Title() {
