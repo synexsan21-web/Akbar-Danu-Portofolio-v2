@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -42,9 +43,10 @@ export default function Education() {
 				icon: faGraduationCap,
 				title: "Capital Market School",
 				subtitle: "Sekolah Pasar Modal",
-				organizer: "PT Bursa Efek Indonesia",
-				details: "Surabaya, Indonesia",
+				organizer: "Organizer: PT Bursa Efek Indonesia",
+				details: "Activity: Sekolah Pasar Modal",
 				date: "25 June 2026",
+				location: "Surabaya, Indonesia",
 				color: "from-blue-500 to-purple-600",
 			},
 		],
@@ -54,8 +56,10 @@ export default function Education() {
 				title: "Second Place",
 				subtitle: "Retail Department Video Competition",
 				organizer:
-					"Himpunan Mahasiswa Manajemen Ritel, Universitas Bojonegoro",
-				details: "Manajemen Ritel Connect Vol. 1 — Juara 2 Lomba Video Jurusan",
+					"Organizer: Himpunan Mahasiswa Manajemen Ritel, Universitas Bojonegoro",
+				details:
+					"Event: Manajemen Ritel Connect Vol. 1",
+				achievement: "Achievement: 2nd Place in Department Video Competition",
 				date: "10 July 2025",
 				color: "from-yellow-400 to-orange-500",
 			},
@@ -63,9 +67,10 @@ export default function Education() {
 				icon: faAward,
 				title: "Public Speaking Training",
 				subtitle: "Student Advance Program",
-				organizer: "Universitas Bojonegoro",
-				details:
-					"Semester Genap 2024/2025 — Predikat: Cukup",
+				organizer: "Organizer: Universitas Bojonegoro",
+				details: "Program: Student Advance Program",
+				period: "Even Semester 2024/2025",
+				assessment: "Assessment: Satisfactory",
 				date: "Certificate issued: 29 August 2025",
 				color: "from-blue-500 to-purple-600",
 			},
@@ -74,10 +79,11 @@ export default function Education() {
 				title: "Active Participant",
 				subtitle: "Manajemen Ritel Connect Vol. 1",
 				organizer:
-					"Himpunan Mahasiswa Manajemen Ritel, Universitas Bojonegoro",
+					"Organizer: Himpunan Mahasiswa Manajemen Ritel, Universitas Bojonegoro",
 				details:
-					"Orientasi Program Studi Manajemen Ritel 2024/2025 — Bojonegoro, Indonesia",
+					"Activity: Retail Management Study Program Orientation 2024/2025",
 				date: "4–6 January 2025",
+				location: "Bojonegoro, Indonesia",
 				color: "from-amber-500 to-yellow-600",
 			},
 			{
@@ -85,8 +91,10 @@ export default function Education() {
 				title: "Faculty Orientation Participant",
 				subtitle: "Orientasi Studi Fakultas Ekonomi II",
 				organizer:
-					"Badan Eksekutif Mahasiswa Fakultas Ekonomi, Universitas Bojonegoro",
-				details: "Event period: 5–6 October 2024",
+					"Organizer: Badan Eksekutif Mahasiswa Fakultas Ekonomi, Universitas Bojonegoro",
+				details:
+					"Activity: Faculty of Economics Orientation II",
+				period: "Event period: 5–6 October 2024",
 				date: "Certificate issued: 28 June 2025",
 				color: "from-purple-500 to-indigo-600",
 			},
@@ -122,13 +130,13 @@ export default function Education() {
 						Education
 					</h1>
 					<p className="text-gray-300 max-w-[800px] mx-auto">
-						Get to know more about my educational background.
+						Get to know more about my educational background and professional development.
 					</p>
 				</motion.div>
 
 				{/* Main Content */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-					{/* Education Section - Left */}
+					{/* Education Section */}
 					<motion.div
 						className="px-5"
 						initial={{ opacity: 0, x: -50 }}
@@ -224,7 +232,7 @@ export default function Education() {
 						</div>
 					</motion.div>
 
-					{/* Certifications Section - Right */}
+					{/* Certifications Section */}
 					<motion.div
 						className="flex flex-col justify-start px-5 md:px-0"
 						initial={{ opacity: 0, x: 50 }}
@@ -236,8 +244,7 @@ export default function Education() {
 						</h2>
 
 						<p className="text-md font-normal mb-3 md:mb-6 text-gray-300">
-							Certifications, training programs, and academic
-							achievements.
+							Certificates, training programs, and academic achievements.
 						</p>
 
 						{/* Certifications Container */}
@@ -323,11 +330,33 @@ export default function Education() {
 																}
 															</p>
 
+															{certification.achievement && (
+																<p className="text-xs text-purple-200 mt-1">
+																	{certification.achievement}
+																</p>
+															)}
+
+															{certification.period && (
+																<p className="text-xs text-purple-200 mt-1">
+																	{certification.period}
+																</p>
+															)}
+
+															{certification.assessment && (
+																<p className="text-xs text-purple-200 mt-1">
+																	{certification.assessment}
+																</p>
+															)}
+
 															<div className="text-xs text-purple-300 mt-2">
-																{
-																	certification.date
-																}
+																{certification.date}
 															</div>
+
+															{certification.location && (
+																<div className="text-xs text-gray-400 mt-1">
+																	{certification.location}
+																</div>
+															)}
 														</div>
 													</div>
 												</div>
