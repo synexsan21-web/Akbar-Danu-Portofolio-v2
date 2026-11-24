@@ -8,7 +8,6 @@ import Image from "next/image";
 
 // images
 import Intervyou1 from "@/public/image/projects/web/intervyou/intervyou-1.png";
-import Intervyou2 from "@/public/image/projects/web/intervyou/intervyou-2.jpeg";
 import Intervyou3 from "@/public/image/projects/web/intervyou/intervyou-3.webp";
 import ProjectAll from "@/public/image/projects.png";
 
@@ -137,33 +136,6 @@ export default function Page() {
 										placeholder="blur"
 										className="object-cover"
 										style={{ objectPosition: "0% 0%" }}
-										sizes="40vw"
-									/>
-								</motion.div>
-							</div>
-
-							<div className="absolute bottom-10 md:bottom-26 right-20 h-[35%] aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
-								<motion.div
-									initial={{
-										opacity: 0,
-										scale: 0.5,
-										x: -100,
-									}}
-									whileInView={{
-										opacity: 1,
-										scale: 1,
-										x: 0,
-									}}
-									transition={{
-										delay: 0.5,
-									}}
-									className="relative w-full h-full shadow-lg">
-									<Image
-										src={Intervyou2}
-										alt="Alvalens"
-										fill
-										placeholder="blur"
-										className="object-cover"
 										sizes="40vw"
 									/>
 								</motion.div>
