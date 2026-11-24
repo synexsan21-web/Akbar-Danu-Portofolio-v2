@@ -94,7 +94,7 @@ const MyPage = () => {
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.3, type: "spring" }}
             >
-              M.Akbar Danu.H.
+              M.Akbar Danu
             </motion.h1>
 
             <motion.p
