@@ -94,7 +94,7 @@ const MyPage = () => {
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.3, type: "spring" }}
             >
-              Akbar Danu
+              M.Akbar Danu.H.
             </motion.h1>
 
             <motion.p
@@ -103,7 +103,7 @@ const MyPage = () => {
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.4, type: "spring" }}
             >
-              Hello, I am Dan, an adaptable professional with over 2 years
+              Hello, I am Danu, an adaptable professional with over 2 years
               of experience in production, sales, customer service, and
               administration, while also working as a freelance graphic designer
               with an interest in visual communication and creative development.
